@@ -1,7 +1,10 @@
 # FHIR Messaging #
 
-The FHIR resource profiles within this DMS have been created to support the Diagnostic Data Services interface for:
+The FHIR resource profiles within this DMS have been created to support the Diagnostic Data Services interface:
 
+ 
+
+ - **[Diagnostic Data Services Request]** - FHIR resource profiles combined to support the Diagnostic Data Services Request Message outbound message interface.
  - **[Diagnostic Data Services Report]** - FHIR resource profiles combined to support the Diagnostic Data Services Report inbound message interface.
 
 **Base Resources**

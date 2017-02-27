@@ -960,7 +960,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/dds-report-patient-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
         <aggregation value="referenced" />
       </type>
       <type>
@@ -3212,7 +3212,7 @@
       </base>
       <type>
         <code value="Organization" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/dds-report-organization-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
         <aggregation value="referenced" />
       </type>
       <isSummary value="true" />
@@ -4489,7 +4489,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/dds-report-patient-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
         <aggregation value="referenced" />
       </type>
       <type>
@@ -5621,7 +5621,7 @@
       </base>
       <type>
         <code value="Organization" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/dds-report-organization-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
         <aggregation value="referenced" />
       </type>
       <isSummary value="true" />

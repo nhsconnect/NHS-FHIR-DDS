@@ -79,7 +79,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/dds-request-patient-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
         <aggregation value="referenced" />
       </type>
       <type>
@@ -3332,7 +3332,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/dds-request-patient-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
         <aggregation value="referenced" />
       </type>
       <type>

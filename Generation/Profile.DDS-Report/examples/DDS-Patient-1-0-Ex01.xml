@@ -3,7 +3,7 @@
 <Patient xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/patient.xsd">
 	<id value="B2D4B85D-AC24-4E9C-A368-588C3F34F570"/>
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/dds-report-patient-1-0"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
 	</meta>
 	<extension url="http://fhir.nhs.net/StructureDefinition/extension-religious-affiliation-snct-1-0">
 		<valueCodeableConcept>

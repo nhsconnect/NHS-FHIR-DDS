@@ -5,7 +5,7 @@
 	<id value="9A66024B-0546-4088-B20E-DFF3C2C00FCE"/>
 	<!--Identifies the profile being used-->
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/dds-report-patient-1-0"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
 	</meta>
 	<!--Primary patient identifier i.e. NHS number and code to indicate its been verified-->
 	<identifier>

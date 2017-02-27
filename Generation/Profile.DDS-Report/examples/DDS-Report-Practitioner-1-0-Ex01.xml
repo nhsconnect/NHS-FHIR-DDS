@@ -6,7 +6,7 @@ Where there are conflicts with the written message specification or schema, the 
 	<id value="4BFCA0EF-85D0-4C5E-B662-D4910BB83D82"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/dds-report-practitioner-1-0"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 	</meta>
 	<identifier>
 		<use value="official"/>

@@ -1,1 +1,0 @@
-Practitioner covers all individuals who are engaged in the healthcare process and healthcare-related services as part of their formal responsibilities.
