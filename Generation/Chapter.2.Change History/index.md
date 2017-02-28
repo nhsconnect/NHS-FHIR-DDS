@@ -1,5 +1,32 @@
 # Change History #
 
+### Version: 1.0; Status: Draft C #
+
+The follwoing changes have been applied to the DDS DMS:
+
+- DMS updated with NHS Digital branding
+
+Original DMS profiles have been replaced with Care Connect versions as follows:
+
+- CareConnect-Patient-1 replaces DDS-Report-Patient-1-0 and DDS-Request-Patient-1-0.
+- CareConnect-Practitioner-1 replaces DDS-Report-Practitioner-1-0 , DDS-Request-Practitioner-1-0.
+- CareConnect-Organization-1 replaces DDS-Report-Organization-1-0 and DDS-Request-Organization-1-0.
+
+The following profiles and extensions have been added to the DMS:
+
+- CareConnect-Location-1
+- Extension-CareConnect-ActivePeriod-1
+- Extension-CareConnect-MainLocation-1
+- Extension-CareConnect-EthnicCategory-1
+- Extension-CareConnect-NHSCommunication-1
+- Extension-CareConnect-NHSNumberVerificationStatus-1
+- Extension-CareConnect-OrganDonor-1
+- Extension-CareConnect-RegistrationDetails-1
+- Extension-CareConnect-ReligiousAffiliation-1
+- Extension-CareConnect-ResidentialStatus-1
+- Extension-CareConnect-TreatmentCategory-1
+- Patient-BirthTime
+
 
 ### Version: 1.0; Status: Draft B #
 

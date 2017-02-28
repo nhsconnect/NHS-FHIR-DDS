@@ -9,7 +9,7 @@
     </tag>
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="09" />
+      <code value="6" />
     </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
@@ -1130,7 +1130,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
       </type>
       <type>
@@ -1778,7 +1778,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -2528,7 +2528,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
       </type>
       <type>
@@ -2835,7 +2835,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
       <type>
         <code value="Reference" />

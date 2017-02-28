@@ -10,6 +10,6 @@
   "OPERATIONS_XML"   : "FALSE",
   "OPERATIONS_JSON" : "FALSE",
   "DMS_TITLE"		:   "Diagnostic Data Services",
-  "DMS_VERSION"		:	"Version 1.0 : DRAFT A",
+  "DMS_VERSION"		:	"Version 1.0 : DRAFT C",
   "SCHEMAS"			:	"TRUE"
 }
