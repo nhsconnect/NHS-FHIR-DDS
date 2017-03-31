@@ -5,40 +5,40 @@
 	<meta>
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
 	</meta>
-	<extension url="http://fhir.nhs.net/StructureDefinition/extension-religious-affiliation-snct-1-0">
+	<extension url="https://fhir.nhs.uk/StructureDefinition/extension-religious-affiliation-snct-1-0">
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/religious-affiliation-snct-1-0"/>
+				<system value="https://fhir.nhs.uk/ValueSet/religious-affiliation-snct-1-0"/>
 				<code value="160549006"/>
 				<display value="Christian, follower of religion"/>
 			</coding>
 		</valueCodeableConcept>
 	</extension>
-	<extension url="http://fhir.nhs.net/StructureDefinition/extension-ethnic-category-1-0">
+	<extension url="https://fhir.nhs.uk/StructureDefinition/extension-ethnic-category-1-0">
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/ethnic-category-1-0"/>
+				<system value="https://fhir.nhs.uk/ValueSet/ethnic-category-1-0"/>
 				<code value="A"/>
 				<display value="British"/>
 			</coding>
 		</valueCodeableConcept>
 	</extension>
-	<extension url="http://fhir.nhs.net/StructureDefinition/extension-organ-donor-1-0">
+	<extension url="https://fhir.nhs.uk/StructureDefinition/extension-organ-donor-1-0">
 		<valueBoolean value="true"/>
 	</extension>
-	<extension url="http://fhir.nhs.net/StructureDefinition/extension-residential-status-1-0">
+	<extension url="https://fhir.nhs.uk/StructureDefinition/extension-residential-status-1-0">
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/residential-status-1-0"/>
+				<system value="https://fhir.nhs.uk/ValueSet/residential-status-1-0"/>
 				<code value="H"/>
 				<display value="UK Resident"/>
 			</coding>
 		</valueCodeableConcept>
 	</extension>
-	<extension url="http://fhir.nhs.net/StructureDefinition/extension-treatment-category-1-0">
+	<extension url="https://fhir.nhs.uk/StructureDefinition/extension-treatment-category-1-0">
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/treatment-category-1-0"/>
+				<system value="https://fhir.nhs.uk/ValueSet/treatment-category-1-0"/>
 				<code value="8"/>
 				<display value="Not applicable"/>
 			</coding>
@@ -46,19 +46,19 @@
 	</extension>
 	<identifier>
 		<use value="official"/>
-		<system value="http://fhir.nhs.net/Id/nhs-number"/>
+		<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 		<value value="9900000276"/>
 	</identifier>
 	<identifier>
 		<use value="secondary"/>
 		<type>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/gpsoc-patient-identifier-type-1-0"/>
+				<system value="https://fhir.nhs.uk/ValueSet/gpsoc-patient-identifier-type-1-0"/>
 				<code value="Local"/>
 				<display value="Local Identifier"/>
 			</coding>
 		</type>
-		<system value="http://fhir.nhs.net/Id/local-identifier"/>
+		<system value="https://fhir.nhs.uk/Id/local-identifier"/>
 		<value value="MRT12345"/>
 	</identifier>
 	<name>
@@ -84,7 +84,7 @@
 	</address>
 	<maritalStatus>
 		<coding>
-			<system value="http://fhir.nhs.net/ValueSet/marital-status-1-0"/>
+			<system value="https://fhir.nhs.uk/ValueSet/marital-status-1-0"/>
 			<code value="N"/>
 			<display value="Not disclosed"/>
 		</coding>
@@ -92,7 +92,7 @@
 	<contact>
 		<relationship>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/cda-person-relationship-type-1-0"/>
+				<system value="https://fhir.nhs.uk/ValueSet/cda-person-relationship-type-1-0"/>
 				<code value="02"/>
 				<display value="Spouse"/>
 			</coding>

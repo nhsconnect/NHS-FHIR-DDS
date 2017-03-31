@@ -5,12 +5,12 @@
 	<id value="0A6F71A7-161D-4A84-8573-AB55DBB19340"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/dds-report-organisation-1-0"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-report-organisation-1-0"/>
 	</meta>
 	<!--Organisation identifier - this example has a locally defined organisation code.-->
 	<identifier>
 		<use value="usual"/>
-		<system value="http://fhir.nhs.net/Id/local-organization-code"/>
+		<system value="https://fhir.nhs.uk/Id/local-organization-code"/>
 		<value value="PHARM001"/>
 		<assigner>
 			<!-- This can be a reference to the profile elsewhere in the message or just text -->
@@ -20,7 +20,7 @@
 	<!-- Type of organisation. Currently used valueset does not have a value which defines this type of organisation.-->
 	<type>
 		<coding>
-			<system value="http://fhir.nhs.net/ValueSet/organisation-type-1-0"/>
+			<system value="https://fhir.nhs.uk/ValueSet/organisation-type-1-0"/>
 			<code value="NN"/>
 			<display value="Non-NHS Organisation"/>
 		</coding>

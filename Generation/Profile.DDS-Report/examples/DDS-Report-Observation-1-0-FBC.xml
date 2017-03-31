@@ -9,7 +9,7 @@ Added in LOINC codes.
 	<id value="1A2ABF38-02EC-471E-BB47-7929F853321A"/>
 	<!--Identifies the profile being used-->
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/dds-report-observation-1-0"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-report-observation-1-0"/>
 	</meta>
 	<identifier>
 		<use value="official"/>

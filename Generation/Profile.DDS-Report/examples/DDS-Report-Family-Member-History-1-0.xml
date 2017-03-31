@@ -6,7 +6,7 @@
 	<id value="3CDC5133-1A2E-461F-8BAF-E09ACFA49AF6"/>
 	<!--Identifies the profile being used-->
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/dds-report-family-member-history-1-0"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-report-family-member-history-1-0"/>
 	</meta>
 	<identifier>
 		<use value="usual"/>
@@ -30,7 +30,7 @@
 	<name value="Muriel Smith"/>
 	<relationship>
 		<coding>
-			<system value="http://fhir.nhs.net/ValueSet/cda-person-relationship-type-1-0"/>
+			<system value="https://fhir.nhs.uk/ValueSet/cda-person-relationship-type-1-0"/>
 			<code value="12"/>
 			<display value="Mother"/>
 		</coding>

@@ -2,7 +2,7 @@
 <!--This example message is provided for illustrative purposes only. It has had no clinical validation. Whilst every effort has been taken to ensure that the examples are consistent, where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence-->
 <Specimen xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/specimen.xsd">
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/dds-specimen-1-0"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-specimen-1-0"/>
 	</meta>
 	<identifier>
 		<use value="official"/>

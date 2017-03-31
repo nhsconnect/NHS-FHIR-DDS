@@ -6,7 +6,7 @@
 	<id value="197DF56D-2A69-4DC4-937C-A10426D9B565"/>
 	<!--Identifies the profile being used-->
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/dds-report-device-1-0"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-report-device-1-0"/>
 	</meta>
 	<text>
 		<status value="generated"/>

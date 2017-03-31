@@ -6,7 +6,7 @@ Where there are conflicts with the written message specification or schema, the 
 	<id value="50ba1013-55f8-4740-880e-1fbb9b4aa125"/>
 	<!--Identifies the profile being used-->
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/dds-report-1-0"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-report-1-0"/>
 	</meta>
 	<identifier>
 		<use value="official"/>

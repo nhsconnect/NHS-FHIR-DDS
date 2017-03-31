@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-02-22T11:20:01.739+00:00" />
+    <lastUpdated value="2017-03-22T14:53:50.222+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -11,8 +11,10 @@
   <name value="Extension-CareConnect-NHSCommunication-1" />
   <status value="active" />
   <publisher value="HL7 UK" />
+  <date value="2017-03-22" />
   <description value="This extension is constrained to support the communication preferences for a resource in the NHS." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
+  <fhirVersion value="1.0.2" />
   <kind value="datatype" />
   <constrainedType value="Extension" />
   <abstract value="false" />
@@ -243,6 +245,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="language" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -420,6 +423,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="preferred" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -475,8 +479,8 @@
     <element>
       <path value="Extension.extension" />
       <name value="modeOfCommunication" />
-      <short value="Mode of communucation for the selected language" />
-      <definition value="Mode of communucation for the selected language" />
+      <short value="Mode of communication for the selected language" />
+      <definition value="Mode of communication for the selected language" />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -590,6 +594,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="modeOfCommunication" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -767,6 +772,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="communicationProficiency" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -830,7 +836,7 @@
       <path value="Extension.extension" />
       <name value="interpreterRequired" />
       <short value="Interpreter preference indicator" />
-      <definition value="Indicates whether an interperter is required for communication purposes" />
+      <definition value="Indicates whether an interpreter is required for communication purposes" />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -944,6 +950,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="interpreterRequired" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -1184,6 +1191,10 @@
       <max value="1" />
     </element>
     <element>
+      <path value="Extension.extension.url" />
+      <fixedUri value="language" />
+    </element>
+    <element>
       <path value="Extension.extension.valueCodeableConcept" />
       <short value="Languages which may be used for communication" />
       <definition value="Languages which may be used for communication" />
@@ -1208,6 +1219,10 @@
       <max value="1" />
     </element>
     <element>
+      <path value="Extension.extension.url" />
+      <fixedUri value="preferred" />
+    </element>
+    <element>
       <path value="Extension.extension.valueBoolean" />
       <short value="Indicates whether or not this language is preferred (over other languages up a certain level)" />
       <definition value="Indicates whether or not this language is preferred (over other languages up a certain level)" />
@@ -1219,8 +1234,12 @@
     <element>
       <path value="Extension.extension" />
       <name value="modeOfCommunication" />
-      <short value="Mode of communucation for the selected language" />
-      <definition value="Mode of communucation for the selected language" />
+      <short value="Mode of communication for the selected language" />
+      <definition value="Mode of communication for the selected language" />
+    </element>
+    <element>
+      <path value="Extension.extension.url" />
+      <fixedUri value="modeOfCommunication" />
     </element>
     <element>
       <path value="Extension.extension.valueCodeableConcept" />
@@ -1244,6 +1263,10 @@
       <max value="1" />
     </element>
     <element>
+      <path value="Extension.extension.url" />
+      <fixedUri value="communicationProficiency" />
+    </element>
+    <element>
       <path value="Extension.extension.valueCodeableConcept" />
       <short value="A valueset to describe the level of proficiency in communicating a language." />
       <min value="1" />
@@ -1262,8 +1285,12 @@
       <path value="Extension.extension" />
       <name value="interpreterRequired" />
       <short value="Interpreter preference indicator" />
-      <definition value="Indicates whether an interperter is required for communication purposes" />
+      <definition value="Indicates whether an interpreter is required for communication purposes" />
       <max value="1" />
+    </element>
+    <element>
+      <path value="Extension.extension.url" />
+      <fixedUri value="interpreterRequired" />
     </element>
     <element>
       <path value="Extension.extension.valueBoolean" />

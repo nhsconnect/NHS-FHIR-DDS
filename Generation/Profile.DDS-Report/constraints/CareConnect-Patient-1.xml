@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-02-28T09:50:36.996+00:00" />
-    <tag>
-      <system value="urn:hscic:publishOrder" />
-      <code value="8" />
-    </tag>
+    <lastUpdated value="2017-03-22T14:20:23.861+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="5" />
@@ -15,6 +11,7 @@
   <name value="CareConnect-Patient-1" />
   <status value="draft" />
   <publisher value="HL7 UK" />
+  <date value="2017-03-22" />
   <description value="The Patient resource represents the patient involved in the provision of healthcare related services." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.1" />
@@ -35,7 +32,7 @@
   <snapshot>
     <element>
       <path value="Patient" />
-      <short value="Information about an individual or animal receiving health care services" />
+      <short value="The Patient resource carries the patient demographic details." />
       <definition value="Demographics and other administrative information about an individual or animal receiving care or other health-related services." />
       <alias value="SubjectOfCare Client Resident" />
       <min value="0" />
@@ -455,9 +452,9 @@
     </element>
     <element>
       <path value="Patient.extension" />
-      <name value="organDonor" />
-      <short value="An indicator that the patient is listed as an organ donor" />
-      <definition value="An indicator that the patient is listed as an organ donor." />
+      <name value="patient-cadavericDonor" />
+      <short value="Flag indicating whether the patient authorized the donation of body parts after death." />
+      <definition value="Flag indicating whether the patient authorized the donation of body parts after death." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -470,7 +467,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-OrganDonor-1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -482,7 +479,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <isModifier value="false" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -4276,7 +4272,6 @@
       <path value="Patient.name" />
       <slicing>
         <discriminator value="use" />
-        <discriminator value="period.end" />
         <ordered value="false" />
         <rules value="openAtEnd" />
       </slicing>
@@ -5473,7 +5468,7 @@
       <definition value="The patient's other names" />
       <comments value="A patient may have multiple names with different uses or applicable periods. For animals, the name is a &quot;HumanName&quot; in the sense that is assigned and used by humans and has the same patterns." />
       <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name." />
-      <min value="1" />
+      <min value="0" />
       <max value="*" />
       <base>
         <path value="Patient.name" />
@@ -6609,6 +6604,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
+        <description value="The gender of a person used for administrative purposes." />
         <valueSetReference>
           <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AdministrativeGender-1" />
         </valueSetReference>
@@ -6750,7 +6746,7 @@
     </element>
     <element>
       <path value="Patient.birthDate.extension" />
-      <name value="patient-BirthTime" />
+      <name value="patient-birthTime" />
       <short value="The time of day that the Patient was born. This includes the date to ensure that the timezone information can be communicated effectively." />
       <definition value="The time of day that the Patient was born. This includes the date to ensure that the timezone information can be communicated effectively." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -7102,7 +7098,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="137 Nowhere Street, Erewhon 9132" />
+      <exampleString value="42 Grove Street, Overtown, West Yorkshire, LS21 1PF" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -7147,7 +7143,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="137 Nowhere Street" />
+      <exampleString value="42, Grove Street" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -7196,7 +7192,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="Erewhon" />
+      <exampleString value="Overtown" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -7245,7 +7241,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="Madison" />
+      <exampleString value="West Yorkshire" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -7335,7 +7331,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="9132" />
+      <exampleString value="LS21 1PF" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -7383,6 +7379,7 @@
       <type>
         <code value="string" />
       </type>
+      <exampleString value="GBR" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -7656,6 +7653,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
+        <description value="The domestic partnership status of a person." />
         <valueSetReference>
           <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MaritalStatus-1" />
         </valueSetReference>
@@ -7893,6 +7891,7 @@
       <type>
         <code value="uri" />
       </type>
+      <exampleUri value="http://hl7.org/fhir/v3/MaritalStatus" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -8809,6 +8808,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="extensible" />
+        <description value="The nature of the relationship between a patient and a contact person for that patient." />
         <valueSetReference>
           <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-PersonRelationshipType-1" />
         </valueSetReference>
@@ -9046,7 +9046,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.hl7.org.uk/CareConnect-PersonRelationshipType-1" />
+      <exampleUri value="https://fhir.hl7.org.uk/CareConnect-PersonRelationshipType-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -10649,7 +10649,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="137 Nowhere Street, Erewhon 9132" />
+      <exampleString value="120, Grove Street, Overtown, West Yorkshire, LS21 1PT" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -10694,7 +10694,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="137 Nowhere Street" />
+      <exampleString value="120, Grove Street" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -10743,7 +10743,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="Erewhon" />
+      <exampleString value="Overtown" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -10792,7 +10792,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="Madison" />
+      <exampleString value="West Yorkshire" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -10882,7 +10882,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="9132" />
+      <exampleString value="LS21 1PT" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -10930,6 +10930,7 @@
       <type>
         <code value="string" />
       </type>
+      <exampleString value="GBR" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -11202,6 +11203,7 @@
       </constraint>
       <binding>
         <strength value="required" />
+        <description value="The gender of a person used for administrative purposes." />
         <valueSetReference>
           <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AdministrativeGender-1" />
         </valueSetReference>
@@ -14649,6 +14651,7 @@
   <differential>
     <element>
       <path value="Patient" />
+      <short value="The Patient resource carries the patient demographic details." />
       <type>
         <code value="Patient" />
       </type>
@@ -14688,10 +14691,11 @@
     </element>
     <element>
       <path value="Patient.extension" />
-      <name value="organDonor" />
+      <name value="patient-cadavericDonor" />
+      <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-OrganDonor-1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor" />
       </type>
     </element>
     <element>
@@ -14801,7 +14805,6 @@
       <path value="Patient.name" />
       <slicing>
         <discriminator value="use" />
-        <discriminator value="period.end" />
         <ordered value="false" />
         <rules value="openAtEnd" />
       </slicing>
@@ -14842,7 +14845,6 @@
       <name value="other" />
       <short value="The patient's other names" />
       <definition value="The patient's other names" />
-      <min value="1" />
     </element>
     <element>
       <path value="Patient.name.use" />
@@ -14897,15 +14899,39 @@
     </element>
     <element>
       <path value="Patient.birthDate.extension" />
-      <name value="patient-BirthTime" />
+      <name value="patient-birthTime" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthTime" />
       </type>
     </element>
     <element>
+      <path value="Patient.address.text" />
+      <exampleString value="42 Grove Street, Overtown, West Yorkshire, LS21 1PF" />
+    </element>
+    <element>
+      <path value="Patient.address.line" />
+      <exampleString value="42, Grove Street" />
+    </element>
+    <element>
+      <path value="Patient.address.city" />
+      <exampleString value="Overtown" />
+    </element>
+    <element>
+      <path value="Patient.address.district" />
+      <exampleString value="West Yorkshire" />
+    </element>
+    <element>
       <path value="Patient.address.state" />
       <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.address.postalCode" />
+      <exampleString value="LS21 1PF" />
+    </element>
+    <element>
+      <path value="Patient.address.country" />
+      <exampleString value="GBR" />
     </element>
     <element>
       <path value="Patient.maritalStatus" />
@@ -14924,6 +14950,7 @@
     <element>
       <path value="Patient.maritalStatus.coding.system" />
       <min value="1" />
+      <exampleUri value="http://hl7.org/fhir/v3/MaritalStatus" />
     </element>
     <element>
       <path value="Patient.maritalStatus.coding.version" />
@@ -14961,7 +14988,7 @@
     <element>
       <path value="Patient.contact.relationship.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.hl7.org.uk/CareConnect-PersonRelationshipType-1" />
+      <exampleUri value="https://fhir.hl7.org.uk/CareConnect-PersonRelationshipType-1" />
     </element>
     <element>
       <path value="Patient.contact.relationship.coding.version" />
@@ -15017,8 +15044,32 @@
       <max value="0" />
     </element>
     <element>
+      <path value="Patient.contact.address.text" />
+      <exampleString value="120, Grove Street, Overtown, West Yorkshire, LS21 1PT" />
+    </element>
+    <element>
+      <path value="Patient.contact.address.line" />
+      <exampleString value="120, Grove Street" />
+    </element>
+    <element>
+      <path value="Patient.contact.address.city" />
+      <exampleString value="Overtown" />
+    </element>
+    <element>
+      <path value="Patient.contact.address.district" />
+      <exampleString value="West Yorkshire" />
+    </element>
+    <element>
       <path value="Patient.contact.address.state" />
       <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.contact.address.postalCode" />
+      <exampleString value="LS21 1PT" />
+    </element>
+    <element>
+      <path value="Patient.contact.address.country" />
+      <exampleString value="GBR" />
     </element>
     <element>
       <path value="Patient.contact.gender" />

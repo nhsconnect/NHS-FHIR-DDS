@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-02-28T09:50:55.765+00:00" />
-    <tag>
-      <system value="urn:hscic:publishOrder" />
-      <code value="9" />
-    </tag>
+    <lastUpdated value="2017-03-22T15:05:06.88+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3" />
@@ -15,6 +11,7 @@
   <name value="CareConnect-Practitioner-1" />
   <status value="active" />
   <publisher value="HL7 UK" />
+  <date value="2017-03-22" />
   <description value="The Practitioner resource represents the healthcare professional directly or indirectly involved in the provision of healthcare related services." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.1" />
@@ -6404,7 +6401,7 @@
       <type>
         <code value="code" />
       </type>
-      <exampleCode value="home" />
+      <exampleCode value="work" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6508,7 +6505,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="137 Nowhere Street, Erewhon 9132" />
+      <exampleString value=" " />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6553,7 +6550,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="137 Nowhere Street" />
+      <exampleString value="13, Amber Street" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6602,7 +6599,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="Erewhon" />
+      <exampleString value="Leeds" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6651,7 +6648,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="Madison" />
+      <exampleString value="West Yorkshire" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6741,7 +6738,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="9132" />
+      <exampleString value="LS20 1TV" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6789,6 +6786,7 @@
       <type>
         <code value="string" />
       </type>
+      <exampleString value="GBR" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -7062,6 +7060,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
+        <description value="The gender of a person used for administrative purposes." />
         <valueSetReference>
           <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AdministrativeGender-1" />
         </valueSetReference>
@@ -9858,6 +9857,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
+        <description value="The role a person plays representing an organization" />
         <valueSetReference>
           <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-SDSJobRoleName-1" />
         </valueSetReference>
@@ -14309,8 +14309,36 @@
       <max value="0" />
     </element>
     <element>
+      <path value="Practitioner.address.use" />
+      <exampleCode value="work" />
+    </element>
+    <element>
+      <path value="Practitioner.address.text" />
+      <exampleString value=" " />
+    </element>
+    <element>
+      <path value="Practitioner.address.line" />
+      <exampleString value="13, Amber Street" />
+    </element>
+    <element>
+      <path value="Practitioner.address.city" />
+      <exampleString value="Leeds" />
+    </element>
+    <element>
+      <path value="Practitioner.address.district" />
+      <exampleString value="West Yorkshire" />
+    </element>
+    <element>
       <path value="Practitioner.address.state" />
       <max value="0" />
+    </element>
+    <element>
+      <path value="Practitioner.address.postalCode" />
+      <exampleString value="LS20 1TV" />
+    </element>
+    <element>
+      <path value="Practitioner.address.country" />
+      <exampleString value="GBR" />
     </element>
     <element>
       <path value="Practitioner.gender" />

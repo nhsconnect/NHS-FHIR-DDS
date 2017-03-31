@@ -5,7 +5,7 @@
 	<id value="b603cede-8c3f-4909-9cb1-d47c0fde9f8a"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/dds-report-specimen-1-0"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-report-specimen-1-0"/>
 	</meta>
 	<identifier>
 		<use value="official"/>

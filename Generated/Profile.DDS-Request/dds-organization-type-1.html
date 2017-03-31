@@ -1,0 +1,618 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+			<title>Diagnostic Data Services - FHIR Implementation Guide</title>
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="author" content="HSCIC" />        
+			<meta name="publisher version" content=	"FHIR-Furnace : 2.7.6256.31052" />
+		
+			<link href="../dist/css/fhir.css" rel="stylesheet" />
+	 
+			<!-- Bootstrap core CSS -->
+			<link href="../dist/css/bootstrap.css" rel="stylesheet" />
+			<link href="../dist/css/bootstrap-fhir.css" rel="stylesheet" />
+			<link href="../dist/css/bootstrap-glyphicons.css" rel="stylesheet" />
+
+			<!-- Project extras -->
+			
+			<link href="../dist/css/pygments-manni.css" rel="stylesheet" />
+
+			<script src="../dist/js/jquery.js"> </script>
+			<script src="../dist/js/bootstrap.min.js"> </script>
+
+			<script src="../dist/js/fhir.js"> </script>
+			
+				<script>
+				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				  ga('create', 'UA-67795986-1', 'auto');
+				  ga('send', 'pageview');
+
+				</script>
+			
+			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+			<!--[if lt IE 9]>
+				<script src="../dist/js/html5shiv.js"></script>
+				<script src="../dist/js/respond.min.js"></script>
+			<![endif]-->
+
+			<!-- Favicons -->
+			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../dist/images/apple-touch-icon-144-precomposed.png" />
+			<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../dist/images/apple-touch-icon-114-precomposed.png" />
+			<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../dist/images/apple-touch-icon-72-precomposed.png" />
+			<link rel="apple-touch-icon-precomposed" href="../dist/images/apple-touch-icon-57-precomposed.png" />
+			<link rel="shortcut icon" href="../dist/images/favicon.ico" />
+	</head>
+	
+	<body>  
+		
+		<!-- segment-header -->
+		<div id="segment-header" class="segment">
+            
+            <div class="container">
+                <!-- container -->
+                <a id="logo" href="http://www.digital.nhs.uk" target="_blank">
+                    <img src="../dist/images/logo.png" alt="logo NHS Digital" />
+                </a>
+                <div id="specificationName">
+         
+                        <b>Diagnostic Data Services</b>
+                  
+                </div>
+
+            </div>
+            <div class="container">
+                <!-- container -->
+            </div>
+        </div>
+        
+		<!-- /segment-header -->
+		
+		
+		<div id="segment-navbar" class="segment">
+            <!-- segment-navbar -->
+            <div id="stripe"> </div>
+            <div class="container">
+                <!-- container -->
+                <!-- HEADER CONTENT -->
+
+                <nav class="navbar navbar-inverse">
+                    <div class="container">
+                        <button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                            <span class="icon-bar"> </span>
+                            <span class="icon-bar"> </span>
+                            <span class="icon-bar"> </span>
+                        </button>
+                        <div class="nav-collapse collapse navbar-inverse-collapse">
+                            <ul class="nav navbar-nav">   
+
+											<li>
+												<a href='../Chapter.1.About/index.html'>About</a>
+											</li>
+											<li>
+												<a href='../Chapter.2.Change History/index.html'>Change History</a>
+											</li>
+											<li>
+												<a href='../Chapter.3.FHIR Messaging Implementation/index.html'>FHIR Messaging Implementation</a>
+											</li>
+											<li>
+												<a href='../Chapter.4.FHIR Messages/index.html'>FHIR Messages</a>
+											</li>
+											<li>
+												<a href='../Chapter.5.Examples/examples.html'>Examples</a>
+											</li>
+											<li>
+												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
+											</li>
+
+                            </ul>
+							
+                            <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
+                                <span class="label label-default"  style="font-size: 95%;">Version 1.0 : DRAFT C</span>
+                            </p>
+
+                        </div>
+                    </div>
+                </nav>				
+            </div>
+        </div>
+		
+		<div id="segment-breadcrumb" class="segment">
+            <!-- segment-breadcrumb -->
+            <div class="container">
+                <!-- container -->
+                <ul class="breadcrumb"></ul>
+            </div>
+            <!-- /container -->
+        </div>
+        <div id="segment-content" class="segment">
+            <!-- segment-content -->
+            <div class="container">
+                <!-- container -->
+                <div class="row">
+                    <div class="inner-wrapper">
+						<!-- CONTENT CONTENT -->
+                        <div class="col-12">
+							
+							
+							
+							
+							
+							
+<div class="panel panel - default" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="panel-heading">
+    <h3 class="panel-title">DDS organization Type</h3>
+  </div>
+  <div class="panel-body">
+    <div class="valueset-content">
+      <div class="valueset-summary">
+        <h3 xmlns="" />Summary</div>
+      <div class="valueset-summary-table">
+        <table>
+          <tr class="valueset-summary-table-header">
+            <th title="The name of the element." class="col-name">Name</th>
+            <th title="The value of the element." class="col-description">Description</th>
+          </tr>
+          <tr>
+            <td>Defining URL:</td>
+            <td>https://fhir.nhs.uk/ValueSet/DDS-Organization-Type-1</td>
+            <tr>
+              <td>Name:</td>
+              <td>DDS organization Type</td>
+            </tr>
+            <tr>
+              <td>Definition:</td>
+              <td>A valueset to describe an organisations according to the nature of the organisation.</td>
+            </tr>
+            <tr>
+              <td>Status:</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Last Updated:</td>
+              <td>03/08/2016 00:00:00 +01:00</td>
+            </tr>
+            <tr>
+              <td>Source Resource:</td>
+              <td>
+                <p>
+                  <a target="_blank" href="..\Resources\Profile.DDS-Request\ValueSets\DDS-Organization-Type-1.xml">XML</a> / <a target="_blank" href="..\Resources\Profile.DDS-Request\ValueSets\DDS-Organization-Type-1.json">JSON</a></p>
+              </td>
+            </tr>
+          </tr>
+        </table>
+        <p />
+      </div>
+      <div class="in-line-valueset" xmlns="">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          <br />
+          <p>This valueset includes all the codes for DDS organization Type ( https://fhir.nhs.uk/DDS-Organization-Type-1 ) <br /></p>
+        </div>
+        <div class="codeSystem-table" xmlns="http://www.w3.org/1999/xhtml">
+          <table>
+            <tr class="table-header">
+              <th title="Code that identifies concept" class="col-code">Code</th>
+              <th title="Text to display to the user" class="col-display">Display</th>
+            </tr>
+            <div class="table-rows">
+              <tr>
+                <td>AR</td>
+                <td>
+                  <p>Application Service Provider</p>
+                  <a name="Application Service Provider" />
+                </td>
+              </tr>
+              <tr>
+                <td>BM</td>
+                <td>
+                  <p>Booking Management System (BMS) Call Centre Establishment</p>
+                  <a name="Booking Management System (BMS) Call Centre Establishment" />
+                </td>
+              </tr>
+              <tr>
+                <td>CN</td>
+                <td>
+                  <p>Cancer Network</p>
+                  <a name="Cancer Network" />
+                </td>
+              </tr>
+              <tr>
+                <td>CR</td>
+                <td>
+                  <p>Cancer Registry</p>
+                  <a name="Cancer Registry" />
+                </td>
+              </tr>
+              <tr>
+                <td>CQ</td>
+                <td>
+                  <p>Care Home Headquarters</p>
+                  <a name="Care Home Headquarters" />
+                </td>
+              </tr>
+              <tr>
+                <td>CT</td>
+                <td>
+                  <p>Care Trust</p>
+                  <a name="Care Trust" />
+                </td>
+              </tr>
+              <tr>
+                <td>CC</td>
+                <td>
+                  <p>Clinical Commissioning Group (CCG)</p>
+                  <a name="Clinical Commissioning Group (CCG)" />
+                </td>
+              </tr>
+              <tr>
+                <td>CL</td>
+                <td>
+                  <p>Clinical Network</p>
+                  <a name="Clinical Network" />
+                </td>
+              </tr>
+              <tr>
+                <td>CA</td>
+                <td>
+                  <p>Commissioning Support Unit (CSU)</p>
+                  <a name="Commissioning Support Unit (CSU)" />
+                </td>
+              </tr>
+              <tr>
+                <td>JG</td>
+                <td>
+                  <p>Court</p>
+                  <a name="Court" />
+                </td>
+              </tr>
+              <tr>
+                <td>DD</td>
+                <td>
+                  <p>Dental Practice Includes 'NHS and Private' and 'Private only' Dental Practices</p>
+                  <a name="Dental Practice Includes 'NHS and Private' and 'Private only' Dental Practices" />
+                </td>
+              </tr>
+              <tr>
+                <td>ED</td>
+                <td>
+                  <p>Education Establishment</p>
+                  <a name="Education Establishment" />
+                </td>
+              </tr>
+              <tr>
+                <td>EA</td>
+                <td>
+                  <p>Executive Agency</p>
+                  <a name="Executive Agency" />
+                </td>
+              </tr>
+              <tr>
+                <td>AP</td>
+                <td>
+                  <p>Executive Agency Programme</p>
+                  <a name="Executive Agency Programme" />
+                </td>
+              </tr>
+              <tr>
+                <td>GD</td>
+                <td>
+                  <p>Government Department</p>
+                  <a name="Government Department" />
+                </td>
+              </tr>
+              <tr>
+                <td>GO</td>
+                <td>
+                  <p>Government Office Region (GOR) Government Office Regions (GORs) closed 31 March 2011 - from 1 April 2011 referred to as Regions</p>
+                  <a name="Government Office Region (GOR) Government Office Regions (GORs) closed 31 March 2011 - from 1 April 2011 referred to as Regions" />
+                </td>
+              </tr>
+              <tr>
+                <td>AA</td>
+                <td>
+                  <p>GP Abeyance and Dispersal GP Practice</p>
+                  <a name="GP Abeyance and Dispersal GP Practice" />
+                </td>
+              </tr>
+              <tr>
+                <td>PR</td>
+                <td>
+                  <p>GP Practices in England and Wales</p>
+                  <a name="GP Practices in England and Wales" />
+                </td>
+              </tr>
+              <tr>
+                <td>HA</td>
+                <td>
+                  <p>High Level Health Geography For example, NHS England Region (Geography)</p>
+                  <a name="High Level Health Geography For example, NHS England Region (Geography)" />
+                </td>
+              </tr>
+              <tr>
+                <td>JD</td>
+                <td>
+                  <p>Immigration Removal Centre</p>
+                  <a name="Immigration Removal Centre" />
+                </td>
+              </tr>
+              <tr>
+                <td>PH</td>
+                <td>
+                  <p>Independent Sector Healthcare Provider (ISHP)</p>
+                  <a name="Independent Sector Healthcare Provider (ISHP)" />
+                </td>
+              </tr>
+              <tr>
+                <td>EL</td>
+                <td>
+                  <p>Local Authority</p>
+                  <a name="Local Authority" />
+                </td>
+              </tr>
+              <tr>
+                <td>LB</td>
+                <td>
+                  <p>Local Health Board (Wales)</p>
+                  <a name="Local Health Board (Wales)" />
+                </td>
+              </tr>
+              <tr>
+                <td>LO</td>
+                <td>
+                  <p>Local Service Provider (LSP)</p>
+                  <a name="Local Service Provider (LSP)" />
+                </td>
+              </tr>
+              <tr>
+                <td>MH</td>
+                <td>
+                  <p>Military Hospital</p>
+                  <a name="Military Hospital" />
+                </td>
+              </tr>
+              <tr>
+                <td>NP</td>
+                <td>
+                  <p>National Application Service Provider</p>
+                  <a name="National Application Service Provider" />
+                </td>
+              </tr>
+              <tr>
+                <td> RO</td>
+                <td>
+                  <p>National Groupings For example, NHS Commissioning Board Commissioning Regions, National Groupings (England), NHS Wales Informatics Service (NWIS)</p>
+                  <a name="National Groupings For example, NHS Commissioning Board Commissioning Regions, National Groupings (England), NHS Wales Informatics Service (NWIS)" />
+                </td>
+              </tr>
+              <tr>
+                <td>NS</td>
+                <td>
+                  <p>NHS Support Agency</p>
+                  <a name="NHS Support Agency" />
+                </td>
+              </tr>
+              <tr>
+                <td>TR</td>
+                <td>
+                  <p>NHS Trust</p>
+                  <a name="NHS Trust" />
+                </td>
+              </tr>
+              <tr>
+                <td>NN</td>
+                <td>
+                  <p>Non-NHS ORGANISATION</p>
+                  <a name="Non-NHS ORGANISATION" />
+                </td>
+              </tr>
+              <tr>
+                <td>NA</td>
+                <td>
+                  <p>Northern Ireland Health and Social Care Board</p>
+                  <a name="Northern Ireland Health and Social Care Board" />
+                </td>
+              </tr>
+              <tr>
+                <td>NB</td>
+                <td>
+                  <p>Northern Ireland Health and Social Care Trust</p>
+                  <a name="Northern Ireland Health and Social Care Trust" />
+                </td>
+              </tr>
+              <tr>
+                <td>NC</td>
+                <td>
+                  <p>Northern Ireland Local Commissioning Group</p>
+                  <a name="Northern Ireland Local Commissioning Group" />
+                </td>
+              </tr>
+              <tr>
+                <td>OH</td>
+                <td>
+                  <p>Optical Headquarters</p>
+                  <a name="Optical Headquarters" />
+                </td>
+              </tr>
+              <tr>
+                <td> OA</td>
+                <td>
+                  <p>Other Statutory Authority (OSA)</p>
+                  <a name="Other Statutory Authority (OSA)" />
+                </td>
+              </tr>
+              <tr>
+                <td>PY</td>
+                <td>
+                  <p>Pharmacy</p>
+                  <a name="Pharmacy" />
+                </td>
+              </tr>
+              <tr>
+                <td> PX</td>
+                <td>
+                  <p>Pharmacy Headquarters</p>
+                  <a name="Pharmacy Headquarters" />
+                </td>
+              </tr>
+              <tr>
+                <td>JE</td>
+                <td>
+                  <p>Police Constabulary</p>
+                  <a name="Police Constabulary" />
+                </td>
+              </tr>
+              <tr>
+                <td>JF</td>
+                <td>
+                  <p>Police Custody Suite</p>
+                  <a name="Police Custody Suite" />
+                </td>
+              </tr>
+              <tr>
+                <td>PT</td>
+                <td>
+                  <p>Primary Care Trust Primary Care Trusts closed 31 March 2013</p>
+                  <a name="Primary Care Trust Primary Care Trusts closed 31 March 2013" />
+                </td>
+              </tr>
+              <tr>
+                <td>ID</td>
+                <td>
+                  <p>Primary Healthcare Directorate (Isle of Man)</p>
+                  <a name="Primary Healthcare Directorate (Isle of Man)" />
+                </td>
+              </tr>
+              <tr>
+                <td> PN</td>
+                <td>
+                  <p>Prison Health Service</p>
+                  <a name="Prison Health Service" />
+                </td>
+              </tr>
+              <tr>
+                <td>EE</td>
+                <td>
+                  <p>School</p>
+                  <a name="School" />
+                </td>
+              </tr>
+              <tr>
+                <td>JC</td>
+                <td>
+                  <p>Secure Children's Home</p>
+                  <a name="Secure Children's Home" />
+                </td>
+              </tr>
+              <tr>
+                <td>JB</td>
+                <td>
+                  <p>Secure Training Centre (STC)</p>
+                  <a name="Secure Training Centre (STC)" />
+                </td>
+              </tr>
+              <tr>
+                <td>JH</td>
+                <td>
+                  <p>Sexual Assault Referral Centre (SARC)</p>
+                  <a name="Sexual Assault Referral Centre (SARC)" />
+                </td>
+              </tr>
+              <tr>
+                <td>SA</td>
+                <td>
+                  <p>Special Health Authority (SpHA)</p>
+                  <a name="Special Health Authority (SpHA)" />
+                </td>
+              </tr>
+              <tr>
+                <td> WA</td>
+                <td>
+                  <p>Welsh Assembly</p>
+                  <a name="Welsh Assembly" />
+                </td>
+              </tr>
+              <tr>
+                <td>WH</td>
+                <td>
+                  <p>Welsh Health Commission</p>
+                  <a name="Welsh Health Commission" />
+                </td>
+              </tr>
+              <tr>
+                <td>LH</td>
+                <td>
+                  <p>Welsh Local Health Board All Welsh Local Health Boards closed on 30 September 2009.Local Health Boards (Wales) introduced from 1 October 2009.</p>
+                  <a name="Welsh Local Health Board All Welsh Local Health Boards closed on 30 September 2009.Local Health Boards (Wales) introduced from 1 October 2009." />
+                </td>
+              </tr>
+              <tr>
+                <td>JA</td>
+                <td>
+                  <p>Young Offenders Institute</p>
+                  <a name="Young Offenders Institute" />
+                </td>
+              </tr>
+            </div>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>						
+					   </div>                      
+                    </div>
+                    <!-- /inner-wrapper -->                   
+                </div>
+                <!-- /row -->              
+            </div>
+            <!-- /container -->           
+        </div>
+    <!-- /segment-content -->
+
+        <div id="segment-footer" class="segment">
+            <!-- segment-footer -->
+            <div class="container">
+                <!-- container -->
+                <div class="inner-wrapper">
+					<div id="explanatoryline">
+                         <img src="../dist/images/explanatoryline.png" alt="Information and technology for better health and care" />
+						 <p>
+                        Copyright &copy; 2017 Health and Social Care Information Centre<br/>
+						NHS Digital is the trading name of the Health and Social Care Information Centre.
+                    </p>
+                    </div>
+				<div id="hl7-nav">
+                    <a id="hl7-logo" href="http://www.hl7.org" target="_blank">
+                        <img src="../dist/images/hl7-logo.png" alt="visit the hl7 website" />
+                    </a>
+					<p>
+					FHIR&reg; is the registered trademark of HL7<br/>
+					and is used with the permission of HL7.
+					</p>
+				</div>
+					<p>
+						<!--<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> -->
+                    </p>
+                </div>
+                <!-- /inner-wrapper -->
+            </div>
+            <!-- /container -->
+        </div>
+
+        <div id="segment-post-footer" class="segment">
+            <!-- segment-post-footer -->
+            <div class="container">
+                <!-- container -->
+            </div>
+            <!-- /container -->
+        </div>
+	</body>
+</html>

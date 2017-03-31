@@ -5,10 +5,10 @@
 	<id value="78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/dds-report-organisation-1-0"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-report-organisation-1-0"/>
 	</meta>
 	<identifier>
-		<system value="http://fhir.nhs.net/Id/ods-organization-code"/>
+		<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 		<value value="H81010002"/>
 	</identifier>
 	<identifier>
@@ -22,7 +22,7 @@
 	<active value="true"/>
 	<type>
 		<coding>
-			<system value="http://fhir.nhs.net/ValueSet/organisation-type-1-0"/>
+			<system value="https://fhir.nhs.uk/ValueSet/organisation-type-1-0"/>
 			<code value="PR"/>
 			<display value="GP Practices in England and Wales"/>
 		</coding>

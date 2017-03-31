@@ -6,7 +6,7 @@
 	<id value="4862C5DD-8D02-475E-A0EC-66BA47BFD282"/>
 	<!--Identifies the profile being used-->
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/dds-report-observation-1-0"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-report-observation-1-0"/>
 	</meta>
 	<identifier>
 		<use value="usual"/>

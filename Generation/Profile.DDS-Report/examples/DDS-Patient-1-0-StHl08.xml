@@ -6,12 +6,12 @@
 		<use value="official"/>
 		<type>
 			<coding>
-				<system value="http://fhir.nhs.net/Id/nhs-number"/>
+				<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 				<code value="01"/>
 				<display value="Verified NHS number"/>
 			</coding>
 		</type>
-		<system value="http://fhir.nhs.net/Id/nhs-number"/>
+		<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 		<value value="4741991873"/>
 		<period>
 			<start value="1956-05-15"/>
@@ -22,12 +22,12 @@
 		<use value="secondary"/>
 		<type>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/local-patient-identifier-type-1-0"/>
+				<system value="https://fhir.nhs.uk/ValueSet/local-patient-identifier-type-1-0"/>
 				<code value="Local"/>
 				<display value="Locally Assigned Patient Identifier"/>
 			</coding>
 		</type>
-		<system value="http://fhir.nhs.net/ValueSet/local-patient-identifier-type-1-0"/>
+		<system value="https://fhir.nhs.uk/ValueSet/local-patient-identifier-type-1-0"/>
 		<value value="123"/>
 		<assigner>
 			<display value="Epsom and St. Helier University Hospitals NHS Trust"/>
@@ -114,7 +114,7 @@
 	<communication>
 		<language>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/human-language-1-0.html"/>
+				<system value="https://fhir.nhs.uk/ValueSet/human-language-1-0.html"/>
 				<code value="en"/>
 				<display value="English"/>
 				<userSelected value="true"/>

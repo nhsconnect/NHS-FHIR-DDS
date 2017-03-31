@@ -10,7 +10,7 @@ Where there are conflicts with the written message specification or schema, the 
 	</meta>
 	<identifier>
 		<use value="official"/>
-		<system value="http://fhir.nhs.net/Id/sds-user-id"/>
+		<system value="https://fhir.nhs.uk/Id/sds-user-id"/>
 		<value value="9900000276"/>
 	</identifier>
 	<name>

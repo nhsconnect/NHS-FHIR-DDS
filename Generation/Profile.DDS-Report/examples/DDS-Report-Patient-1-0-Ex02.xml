@@ -12,12 +12,12 @@
 		<use value="official"/>
 		<type>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1-0"/>
+				<system value="https://fhir.nhs.uk/ValueSet/nhs-number-status-indicator-1-0"/>
 				<code value="01"/>
 				<display value="Number present and verified"/>
 			</coding>
 		</type>
-		<system value="http://fhir.nhs.net/Id/nhs-number"/>
+		<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 		<value value="9900000277"/>
 	</identifier>
 	<!--Whether this patient's record is in active use-->
@@ -61,7 +61,7 @@
 	<contact>
 		<relationship>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/cda-person-relationship-type-1-0"/>
+				<system value="https://fhir.nhs.uk/ValueSet/cda-person-relationship-type-1-0"/>
 				<code value="12"/>
 				<display value="Mother"/>
 				<!-- If this coding was chosen directly by the user -->
@@ -98,7 +98,7 @@
 		<!--The patient's preferred language-->
 		<language>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/human-language-1-0.html"/>
+				<system value="https://fhir.nhs.uk/ValueSet/human-language-1-0.html"/>
 				<code value="en"/>
 				<display value="English"/>
 				<userSelected value="true"/>

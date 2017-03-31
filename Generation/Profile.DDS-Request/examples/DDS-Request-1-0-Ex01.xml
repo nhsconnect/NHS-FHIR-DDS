@@ -4,7 +4,7 @@ Where there are conflicts with the written message specification or schema, the 
 <!--This example shows a request for Hepatitis B antigen screening-->
 <DiagnosticOrder xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/diagnosticorder.xsd">
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/dds-request-1-0"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-request-1-0"/>
 	</meta>
 	<subject>
 		<!-- This is reference to the patient profile elsewhere in the message -->

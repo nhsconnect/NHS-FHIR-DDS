@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-02-28T09:51:54.285+00:00" />
-    <tag>
-      <system value="urn:hscic:publishOrder" />
-      <code value="10" />
-    </tag>
+    <lastUpdated value="2017-03-22T15:04:32.091+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="4" />
@@ -15,6 +11,7 @@
   <name value="CareConnect-Organization-1" />
   <status value="active" />
   <publisher value="HL7 UK" />
+  <date value="2017-03-22" />
   <description value="The Organization resource represents the organisation that employs the healthcare professional." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.1" />
@@ -365,6 +362,44 @@
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MainLocation-1" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Organization.extension" />
+      <name value="organization-period" />
+      <short value="The date range that this organization should be considered available." />
+      <definition value="The date range that this organization should be considered available." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/organization-period" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5180,137 +5215,6 @@
       </mapping>
     </element>
     <element>
-      <path value="Organization.active.id" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references)." />
-      <comments value="RFC 4122" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="id" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element>
-      <path value="Organization.active.extension" />
-      <slicing>
-        <discriminator value="url" />
-        <rules value="open" />
-      </slicing>
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="Organization.active.extension" />
-      <name value="activePeriod" />
-      <short value="Active period" />
-      <definition value="The active period of an organization (may contain only a start date)." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ActivePeriod-1" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="Organization.active.value" />
-      <representation value="xmlAttr" />
-      <short value="Primitive value for boolean" />
-      <definition value="Primitive value for boolean" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="boolean.value" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
-            <valueString value="true | false" />
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type">
-            <valueString value="boolean" />
-          </extension>
-        </code>
-      </type>
-    </element>
-    <element>
       <path value="Organization.type" />
       <short value="Kind of organization" />
       <definition value="The kind of organization that this is." />
@@ -5340,9 +5244,7 @@
       <binding>
         <strength value="example" />
         <description value="Used to categorize the organization" />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/organization-type" />
-        </valueSetReference>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/organization-type" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5581,6 +5483,7 @@
       <type>
         <code value="uri" />
       </type>
+      <exampleUri value="http://hl7.org/fhir/organization-type" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6551,7 +6454,7 @@
       <type>
         <code value="code" />
       </type>
-      <exampleCode value="home" />
+      <exampleCode value="work" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6655,7 +6558,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="137 Nowhere Street, Erewhon 9132" />
+      <exampleString value="1, Main Street, Leeds, West Yorkshire, LS1 3PO" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6700,7 +6603,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="137 Nowhere Street" />
+      <exampleString value="1, Main Street" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6749,7 +6652,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="Erewhon" />
+      <exampleString value="Leeds" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6798,7 +6701,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="Madison" />
+      <exampleString value="West Yorkshire" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6888,7 +6791,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="9132" />
+      <exampleString value="LS1 3PO" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6936,6 +6839,7 @@
       <type>
         <code value="string" />
       </type>
+      <exampleString value="GBR" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -9257,7 +9161,7 @@
       <type>
         <code value="code" />
       </type>
-      <exampleCode value="home" />
+      <exampleCode value="work" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -9361,7 +9265,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="137 Nowhere Street, Erewhon 9132" />
+      <exampleString value="1, Main Street, Leeds, West Yorkshire, LS1 3PO" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -9406,7 +9310,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="137 Nowhere Street" />
+      <exampleString value="1, Main Street" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -9455,7 +9359,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="Erewhon" />
+      <exampleString value="Leeds" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -9504,7 +9408,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="Madison" />
+      <exampleString value="West Yorkshire" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -9537,7 +9441,7 @@
       <alias value="Province" />
       <alias value="Territory" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Address.state" />
         <min value="0" />
@@ -9594,7 +9498,7 @@
       <type>
         <code value="string" />
       </type>
-      <exampleString value="9132" />
+      <exampleString value="LS1 3PO" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -9642,6 +9546,7 @@
       <type>
         <code value="string" />
       </type>
+      <exampleString value="GBR" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -9917,6 +9822,15 @@
       </type>
     </element>
     <element>
+      <path value="Organization.extension" />
+      <name value="organization-period" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/organization-period" />
+      </type>
+    </element>
+    <element>
       <path value="Organization.identifier" />
       <slicing>
         <discriminator value="system" />
@@ -10015,24 +9929,16 @@
       <definition value="Date the organization became active, and if inactive, the date the organization became inactive." />
     </element>
     <element>
-      <path value="Organization.active.extension" />
-      <slicing>
-        <discriminator value="url" />
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element>
-      <path value="Organization.active.extension" />
-      <name value="activePeriod" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ActivePeriod-1" />
-      </type>
+      <path value="Organization.type" />
+      <binding>
+        <strength value="example" />
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/organization-type" />
+      </binding>
     </element>
     <element>
       <path value="Organization.type.coding.system" />
       <min value="1" />
+      <exampleUri value="http://hl7.org/fhir/organization-type" />
     </element>
     <element>
       <path value="Organization.type.coding.version" />
@@ -10047,8 +9953,36 @@
       <min value="1" />
     </element>
     <element>
+      <path value="Organization.address.use" />
+      <exampleCode value="work" />
+    </element>
+    <element>
+      <path value="Organization.address.text" />
+      <exampleString value="1, Main Street, Leeds, West Yorkshire, LS1 3PO" />
+    </element>
+    <element>
+      <path value="Organization.address.line" />
+      <exampleString value="1, Main Street" />
+    </element>
+    <element>
+      <path value="Organization.address.city" />
+      <exampleString value="Leeds" />
+    </element>
+    <element>
+      <path value="Organization.address.district" />
+      <exampleString value="West Yorkshire" />
+    </element>
+    <element>
       <path value="Organization.address.state" />
       <max value="0" />
+    </element>
+    <element>
+      <path value="Organization.address.postalCode" />
+      <exampleString value="LS1 3PO" />
+    </element>
+    <element>
+      <path value="Organization.address.country" />
+      <exampleString value="GBR" />
     </element>
     <element>
       <path value="Organization.partOf" />
@@ -10081,6 +10015,38 @@
     <element>
       <path value="Organization.contact.name.period" />
       <max value="0" />
+    </element>
+    <element>
+      <path value="Organization.contact.address.use" />
+      <exampleCode value="work" />
+    </element>
+    <element>
+      <path value="Organization.contact.address.text" />
+      <exampleString value="1, Main Street, Leeds, West Yorkshire, LS1 3PO" />
+    </element>
+    <element>
+      <path value="Organization.contact.address.line" />
+      <exampleString value="1, Main Street" />
+    </element>
+    <element>
+      <path value="Organization.contact.address.city" />
+      <exampleString value="Leeds" />
+    </element>
+    <element>
+      <path value="Organization.contact.address.district" />
+      <exampleString value="West Yorkshire" />
+    </element>
+    <element>
+      <path value="Organization.contact.address.state" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Organization.contact.address.postalCode" />
+      <exampleString value="LS1 3PO" />
+    </element>
+    <element>
+      <path value="Organization.contact.address.country" />
+      <exampleString value="GBR" />
     </element>
   </differential>
 </StructureDefinition>
