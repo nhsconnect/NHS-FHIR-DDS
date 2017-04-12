@@ -54,11 +54,11 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="Haemoglobin"/>
 			</code>
 			<subject>
-				<reference value="Patient/FFBCDA04-BD23-4272-B08C-733725A21CE1"/>
+				<reference value="urn:uuid:ffbcda04-bd23-4272-b08c-733725a21ce1"/>
 				<display value="William Arthur Smith"/>
 			</subject>
 			<performer>
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="St. Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
 			<valueQuantity>
@@ -93,7 +93,6 @@ and the Diagnostic Report with an ORU_R01 message-->
 	<contained>
 		<Observation>
 			<id value="r2"/>
-
 			<status value="final"/>
 			<code>
 				<coding>
@@ -104,10 +103,10 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="Red Cell Count"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
 			<valueQuantity>
@@ -145,10 +144,10 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="Haematocrit"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
 			<valueQuantity>
@@ -186,12 +185,10 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="Mean Cell Volume"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
-
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
-
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
 			<valueQuantity>
@@ -235,12 +232,10 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="Mean Cell Hb"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
-
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
-
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
 			<valueQuantity>
@@ -284,13 +279,12 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="Mean Cell Hb Conc"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 				<display value="Denzil Patronius"/>
 			</subject>
 
 			<performer>
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
-
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
 			<valueQuantity>
@@ -329,11 +323,11 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="RDW"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
 
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
@@ -368,11 +362,11 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="Platelet Count"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
 
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
@@ -411,12 +405,10 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="White Cell Count"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
-
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
-
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
 			<valueQuantity>
@@ -454,19 +446,17 @@ and the Diagnostic Report with an ORU_R01 message-->
 			<code>
 				<coding>
 					<system value="http://loinc.org"/>
-					<code value="
-751-8 "/>
+					<code value="751-8 "/>
 					<display value="Neutrophils [#/​volume] in Blood by Automated count"/>
 				</coding>
 				<text value="Neutrophils"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
 
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
-
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
 			<valueQuantity>
@@ -504,12 +494,10 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="Lymphocytes"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
-
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
-
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
 			<valueQuantity>
@@ -553,12 +541,10 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="Monocytes"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
-
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
-
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
 			<valueQuantity>
@@ -596,13 +582,13 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="Eosinophils"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
 				-->
 	<!--Performer Profile Needed-->
 	<!--
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				-->
 	<!--dce uuid GOES HERE-->
 	<!--
@@ -629,12 +615,10 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="Eosinophils"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
-
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
-
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
 			<valueQuantity>
@@ -666,13 +650,13 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="Basophils"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
 				-->
 	<!--Performer Profile Needed-->
 	<!--
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				-->
 	<!--dce uuid GOES HERE-->
 	<!--
@@ -699,12 +683,10 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="Basophils"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
-
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
-
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
 			<valueQuantity>
@@ -736,12 +718,10 @@ and the Diagnostic Report with an ORU_R01 message-->
 				<text value="LUCs"/>
 			</code>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 			</subject>
 			<performer>
-
-				<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
-
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 			</performer>
 			<valueQuantity>
@@ -771,7 +751,6 @@ and the Diagnostic Report with an ORU_R01 message-->
 			<code value="HM"/>
 		</coding>
 	</category>
-
 	<code>
 		<coding>
 			<system value="http://loinc.org"/>
@@ -785,21 +764,17 @@ and the Diagnostic Report with an ORU_R01 message-->
 		<text value="Full Blood Count"/>
 	</code>
 	<subject>
-		<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+		<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f577"/>
 	</subject>
 	<encounter>
 		<reference value="Encounter/example"/>
 	</encounter>
 	<effectiveDateTime value="2008-12-08"/>
-
 	<issued value="2009-02-09T12:16:00+11:00"/>
 	<performer>
-
-		<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
-
+		<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 		<display value="St Helier Pathology, Epsom and St. Helier University Hospitals NHS Trust"/>
 	</performer>
-
 	<result>
 		<reference value="#r1"/>
 	</result>

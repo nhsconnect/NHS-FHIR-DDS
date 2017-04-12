@@ -14,7 +14,7 @@
 		<value value="b603cede-8c3f-4909-9cb1-d47c0fde9f8a"/>
 		<assigner>
 			<!-- This can be a reference to the profile elsewhere in the message or just text -->
-			<reference value="Organization/78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
+			<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 			<display value="MGP Medical Centre"/>
 		</assigner>
 	</identifier>
@@ -29,7 +29,7 @@
 	</type>
 	<subject>
 		<!-- Reference to the patient profile carried elsewhere in the message-->
-		<reference value="Patient/b2d4b85d-ac24-4e9c-a368-588c3f34f570"/>
+		<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f570"/>
 		<display value="William Arthur Smith"/>
 	</subject>
 	<!-- Identifier assigned by the lab-->
@@ -42,7 +42,7 @@
 		</period>
 		<assigner>
 			<!-- This can be a reference to the profile elsewhere in the message or just text -->
-			<reference value="Organization/223f5c66-66bf-4cea-a5d7-25ab9348b448"/>
+			<reference value="urn:uuid:223f5c66-66bf-4cea-a5d7-25ab9348b448"/>
 		</assigner>
 	</accessionIdentifier>
 	<receivedTime value="2016-01-03T09:05:00+01:00"/>
@@ -85,7 +85,7 @@
 			<value value="08fc96c4-eb3a-46d3-93c5-4b23792dcc1c"/>
 			<assigner>
 				<!-- This can be a reference to the profile elsewhere in the message or just text -->
-				<reference value="Organisation/78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="MGP Medical Centre"/>
 			</assigner>
 		</identifier>

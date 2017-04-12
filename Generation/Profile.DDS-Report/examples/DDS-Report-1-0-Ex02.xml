@@ -125,11 +125,11 @@
 		<DiagnosticOrder>
 			<id value="req"/>
 			<subject>
-				<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
+				<reference value="urn:uuid:B2D4B85D-AC24-4E9C-A368-588C3F34F577"/>
 				<display value="Brian Appleton"/>
 			</subject>
 			<orderer>
-				<reference value="Practitioner/f001"/>
+				<reference value="urn:uuid:f001"/>
 				<display value="Dr Demetri"/>
 			</orderer>
 			<identifier>
@@ -138,7 +138,7 @@
 				<value value="L2381"/>
 			</identifier>
 			<encounter>
-				<reference value="Encounter/f001"/>
+				<reference value="urn:uuid:f001"/>
 				<!--    TODO Corrected -->
 			</encounter>
 			<reason>
@@ -277,13 +277,6 @@
 						<code value="30630007"/>
 						<display value="MCHC - Mean cell haemoglobin concentration"/>
 					</coding>
-					
-					
-					
-					
-					
-					
-					
 				</code>
 				<bodySite>
 					<coding>
@@ -298,12 +291,12 @@
 	<!--End of Test Data Needs Ammending-->
 	<identifier>
 		<use value="official"/>
-		<value value="EA7CC19B-B738-481E-AA0E-5FED2864A907"/>
+		<value value="ea7cc19b-b738-481e-aa0e-5fed2864a907"/>
 		<period>
 			<start value="2016-01-01"/>
 		</period>
 		<assigner>
-			<reference value="Organization/RA9"/>
+			<reference value="urn:uuid:RA9"/>
 			<display value="Assigning Organisation"/>
 		</assigner>
 	</identifier>
@@ -312,7 +305,7 @@
 	</category>
 	<code/>
 	<subject>
-		<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F570"/>
+		<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f570"/>
 		<display value="William Arthur Smith"/>
 	</subject>
 	<effectiveDateTime value="2016-01-03"/>
@@ -320,7 +313,7 @@
 	<performer/>
 	<request/>
 	<specimen>
-		<reference value="Specimen/83BF8C17-9B27-465A-84B2-CEC6E4977A1E"/>
+		<reference value="urn:uuid:83bf8c17-9b27-465a-84b2-cec6e4977a1e"/>
 		<display id="9.99.999.99.10.2" value="APH8739669"></display>
 	</specimen>
 	<result/>

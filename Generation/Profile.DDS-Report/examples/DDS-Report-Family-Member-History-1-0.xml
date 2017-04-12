@@ -3,7 +3,7 @@
 <!--This example shows a family member (mother) related to the patient subject. The mother died of a stroke.-->
 <FamilyMemberHistory xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir  ../../Schemas/familymemberhistory.xsd">
 	<!--The id for this entity-->
-	<id value="3CDC5133-1A2E-461F-8BAF-E09ACFA49AF6"/>
+	<id value="3cdc5133-1a2e-461f-8baf-e09acfa49af6"/>
 	<!--Identifies the profile being used-->
 	<meta>
 		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-report-family-member-history-1-0"/>
@@ -14,13 +14,13 @@
 		<value value="MMCFMH8997654"/>
 		<assigner>
 			<!-- This can be a reference to the profile elsewhere in the message or just text -->
-			<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
+			<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 			<display value="MGP Medical Centre"/>
 		</assigner>
 	</identifier>
 	<patient>
 		<!-- This is reference to the patient profile elsewhere in the message -->
-		<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F570"/>
+		<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-5883f34f570"/>
 		<display value="William Arthur Smith"/>
 	</patient>
 	<!--The date the information was recorded.-->

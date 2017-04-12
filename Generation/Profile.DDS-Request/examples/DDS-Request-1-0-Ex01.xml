@@ -8,12 +8,12 @@ Where there are conflicts with the written message specification or schema, the 
 	</meta>
 	<subject>
 		<!-- This is reference to the patient profile elsewhere in the message -->
-		<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F570"/>
+		<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f570"/>
 		<display value="William Arthur Smith"/>
 	</subject>
 	<orderer>
 		<!-- This is reference to the practitioner profile elsewhere in the message -->
-		<reference value="Practitioner/4BFCA0EF-85D0-4C5E-B662-D4910BB83D82"/>
+		<reference value="urn:uuid:4bfca0ef-85d0-4c5e-b662-d4910bb83d82"/>
 		<display value="Dr. Jones"/>
 	</orderer>
 	<identifier>
@@ -21,7 +21,7 @@ Where there are conflicts with the written message specification or schema, the 
 		<system value="http://www.mmc.nhs.uk/request-identifier"/>
 		<value value="D4910BB83D82"/>
 		<assigner>
-			<reference value="Organization/78D64BB3-B5B2-450B-AEB7-D9035EBC711D"/>
+			<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 		</assigner>
 	</identifier>
 	<identifier>
@@ -29,7 +29,7 @@ Where there are conflicts with the written message specification or schema, the 
 		<system value="http://www.sampleth.nhs.uk/pathology/request-identifier"/>
 		<value value="STHTPATH8667800054"/>
 		<assigner>
-			<reference value="Organization/223F5C66-66BF-4CEA-A5D7-25AB9348B448"/>
+			<reference value="urn:uuid:223f5c66-66bf-4cea-a5d7-25ab9348b448"/>
 		</assigner>
 	</identifier>
 	<!--SnomedCT code showing the reason for the request. Need to consult Subject matter experts for appropriateness-->
@@ -43,7 +43,7 @@ Where there are conflicts with the written message specification or schema, the 
 	</reason>
 	<specimen>
 		<!-- This is reference to the specimen profile elsewhere in the message -->
-		<reference value="Specimen/B603CEDE-8C3F-4909-9CB1-D47C0FDE9F8A"/>
+		<reference value="urn:uuid:b603cede-8c3f-4909-9cb1-d47c0fde9f8a"/>
 	</specimen>
 	<status value="requested"/>
 	<priority value="routine"/>

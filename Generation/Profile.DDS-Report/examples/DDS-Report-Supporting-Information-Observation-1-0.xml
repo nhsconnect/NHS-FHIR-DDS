@@ -3,7 +3,7 @@
 <!--This example shows any relevant supporting information for the subject of the observation; in this case a damaged sample.-->
 <Observation xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir  ../../Schemas/observation.xsd">
 	<!--The id for this entity-->
-	<id value="CE773525-85D2-4214-A4C3-8EB5984152C4"/>
+	<id value="ce773525-85d2-4214-a4c3-8eb5984152c4"/>
 	<!--Identifies the profile being used-->
 	<meta>
 		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-report-supporting-information-observation-1-0"/>
@@ -14,7 +14,7 @@
 		<value value="HAEM2667800009"/>
 		<assigner>
 			<!-- This can be a reference to the profile elsewhere in the message or just text -->
-			<reference value="Organization/223F5C66-66BF-4CEA-A5D7-25AB9348B448"/>
+			<reference value="urn:uuid:223f5c66-66bf-4cea-a5d7-25ab9348b448"/>
 			<display value="Sampletown Teaching Hospitals, Pathology Services"/>
 		</assigner>
 	</identifier>
@@ -34,7 +34,7 @@
 		</coding>
 	</code>
 	<subject>
-		<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F570"/>
+		<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f570"/>
 		<display value="William Arthur Smith"/>
 	</subject>
 	<issued value="2016-01-08T12:35:40+01:00"/>

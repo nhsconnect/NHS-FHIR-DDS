@@ -3,7 +3,7 @@
 <!--This is an example for a Hepatitis B antigen screening.-->
 <Observation xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir  ../../Schemas/observation.xsd">
 	<!--The id for this entity-->
-	<id value="F1349F62-D2CC-4384-A86E-ABD2A654C571"/>
+	<id value="f1349f62-d2cc-4384-a86e-abd2a654c571"/>
 	<!--Identifies the profile being used-->
 	<meta>
 		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-report-observation-1-0"/>
@@ -14,7 +14,7 @@
 		<value value="MIC8667800012"/>
 		<assigner>
 			<!-- This can be a reference to the profile elsewhere in the message or just text -->
-			<reference value="Organization/223F5C66-66BF-4CEA-A5D7-25AB9348B448"/>
+			<reference value="urn:uuid:223f5c66-66bf-4cea-a5d7-25ab9348b448"/>
 		</assigner>
 	</identifier>
 	<status value="final"/>
@@ -35,7 +35,7 @@
 		</coding>
 	</code>
 	<subject>
-		<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F570"/>
+		<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f570"/>
 		<display value="William Arthur Smith"/>
 	</subject>
 	<!--Would it be more appropriate to have an effectivePeriod for a this type of Microbiology test?-->
@@ -67,7 +67,7 @@
 		</coding>
 	</method>
 	<specimen>
-		<reference value="Specimen/B603CEDE-8C3F-4909-9CB1-D47C0FDE9F8A"/>
+		<reference value="urn:uuid:b603cede-8c3f-4909-9cb1-d47c0fde9f8a"/>
 	</specimen>
 	<!--There are SNOMED codes for negative and positive outcomes for all these tests - would it be more appropriate ot use these or to use the FHIR valueset http://hl7.org/fhir/ValueSet/observation-interpretation? Consult Subject matter experts.-->
 	<!-- List of component tests for this observation-->

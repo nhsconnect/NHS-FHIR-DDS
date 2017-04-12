@@ -15,7 +15,7 @@ Where there are conflicts with the written message specification or schema, the 
 		<value value="STHTPATH89000000003"/>
 		<!-- This can be a reference to the profile elsewhere in the message or just text -->
 		<assigner>
-			<reference value="Organization/223f5c66-66bf-4cea-a5d7-25ab9348b448"/>
+			<reference value="urn:uuid:223f5c66-66bf-4cea-a5d7-25ab9348b448"/>
 			<display value="Sampletown Teaching Hospitals, Pathology Services"/>
 		</assigner>
 	</identifier>
@@ -39,14 +39,14 @@ Where there are conflicts with the written message specification or schema, the 
 	</code>
 	<subject>
 		<!-- This is reference to the patient profile elsewhere in the message -->
-		<reference value="Patient/b2d4b85d-ac24-4e9c-a368-588c3f34f570"/>
+		<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f570"/>
 		<display value="William Arthur Smith"/>
 	</subject>
 	<effectiveDateTime value="2013-04-15T03:45:00+01:00"/>
 	<issued value="2013-04-15T10:28:00+01:00"/>
 	<performer>
 		<!-- This is a reference to the organisation or practitioner responsible for issuing the report. -->
-		<reference value="Practitioner/4bfca0ef-85d0-4c5e-b662-d4910bb83d82"/>
+		<reference value="urn:uuid:4bfca0ef-85d0-4c5e-b662-d4910bb83d82"/>
 	</performer>
 	<request>
 		<!-- Request identifier -->
@@ -54,11 +54,11 @@ Where there are conflicts with the written message specification or schema, the 
 	</request>
 	<!-- This is a reference to the specimen elsewhere in the message. -->
 	<specimen>
-		<reference value="Specimen/b603cede-8c3f-4909-9cb1-d47c0fde9f8a"/>
+		<reference value="urn:uuid:b603cede-8c3f-4909-9cb1-d47c0fde9f8a"/>
 	</specimen>
 	<result>
 		<!--Reference to the relevant observation-->
-		<reference value="Observation/f1349f62-d2cc-4384-a86e-abd2a654c571"/>
+		<reference value="urn:uuid:f1349f62-d2cc-4384-a86e-abd2a654c571"/>
 		<display value="Results for Hepatitis B antigen screening"/>
 	</result>
 	<conclusion value="Immune to Hepatitis B. Immunity due to vaccination."/>

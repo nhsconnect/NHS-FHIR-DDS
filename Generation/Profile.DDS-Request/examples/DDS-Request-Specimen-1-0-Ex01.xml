@@ -6,12 +6,12 @@
 	</meta>
 	<identifier>
 		<use value="official"/>
-		<value value="83BF8C17-9B27-465A-84B2-CEC6E4977A1E"/>
+		<value value="83bf8c17-9b27-465a-84b2-cec6e4977a1e"/>
 		<period>
 			<start value="2016-01-01"/>
 		</period>
 		<assigner>
-			<reference value="Organization/M85008"/>
+			<reference value="urn:uuid:M85008"/>
 			<display value="Assigning Organisation"/>
 		</assigner>
 	</identifier>
@@ -26,7 +26,7 @@
 		</coding>
 	</type>
 	<subject>
-		<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F570"/>
+		<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f570"/>
 		<display value="William Arthur Smith"/>
 	</subject>
 	<accessionIdentifier>
@@ -38,7 +38,7 @@
 	<receivedTime value="0900"/>
 	<collection>
 		<collector>
-			<reference value="Practitioner/856F14A7-5323-4998-930A-A63E29B79F2F"/>
+			<reference value="urn:uuid:856F14A7-5323-4998-930A-A63E29B79F2F"/>
 			<display value="Nurse. Brown"/>
 		</collector>
 		<quantity>
@@ -79,7 +79,7 @@
 	</treatment>
 	<container>
 		<identifier>
-			<value value="08FC96C4-EB3A-46D3-93C5-4B23792DCC1C"/>
+			<value value="08fc96c4-eb3a-46d3-93c5-4b23792dcc1c"/>
 		</identifier>
 		<type>
 			<coding>

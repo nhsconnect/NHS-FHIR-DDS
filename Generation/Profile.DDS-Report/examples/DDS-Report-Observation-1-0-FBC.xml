@@ -6,7 +6,7 @@ Added in LOINC codes.
 -->
 <Observation xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir  ../../Schemas/observation.xsd">
 	<!--The id for this entity-->
-	<id value="1A2ABF38-02EC-471E-BB47-7929F853321A"/>
+	<id value="1a2abf38-02ec-471e-bb47-7929f853321a"/>
 	<!--Identifies the profile being used-->
 	<meta>
 		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-report-observation-1-0"/>
@@ -17,7 +17,7 @@ Added in LOINC codes.
 		<value value="HAEM8667800009"/>
 		<assigner>
 			<!-- This can be a reference to the profile elsewhere in the message or just text -->
-			<reference value="Organization/223F5C66-66BF-4CEA-A5D7-25AB9348B448"/>
+			<reference value="urn:uuid:223f5c66-66bf-4cea-a5d7-25ab9348b448"/>
 		</assigner>
 	</identifier>
 	<status value="final"/>
@@ -36,7 +36,7 @@ Added in LOINC codes.
 		</coding>
 	</code>
 	<subject>
-		<reference value="Patient/B2D4B85D-AC24-4E9C-A368-588C3F34F570"/>
+		<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f570"/>
 		<display value="William Arthur Smith"/>
 	</subject>
 	<effectiveDateTime value="2016-05-17T15:30:10+01:00"/>
@@ -67,7 +67,7 @@ Added in LOINC codes.
 		</coding>
 	</method>
 	<specimen>
-		<reference value="Specimen/B603CEDE-8C3F-4909-9CB1-D47C0FDE9F8A"/>
+		<reference value="urn:uuid:b603cede-8c3f-4909-9cb1-d47c0fde9f8a"/>
 	</specimen>
 	<component>
 		<code>

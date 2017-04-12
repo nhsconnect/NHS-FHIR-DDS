@@ -14,7 +14,7 @@
 		<value value="ddd1f740-9cab-4f2c-a34b-c18e92f377ca"/>
 		<assigner>
 			<!-- This can be a reference to the profile elsewhere in the message or just text -->
-			<reference value="Organization/78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
+			<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 			<display value="MGP Medical Centre"/>
 		</assigner>
 	</identifier>
@@ -28,7 +28,7 @@
 	</type>
 	<subject>
 		<!-- Reference to the patient profile carried elsewhere in the message-->
-		<reference value="Patient/9a66024b-0546-4088-b20e-dff3c2c00fce"/>
+		<reference value="urn:uuid:9a66024b-0546-4088-b20e-dff3c2c00fce"/>
 		<display value="Chrystal Jones"/>
 	</subject>
 	<accessionIdentifier>
@@ -40,14 +40,14 @@
 		</period>
 		<assigner>
 			<!-- This can be a reference to the profile elsewhere in the message or just text -->
-			<reference value="Organization/223f5c66-66bf-4cea-a5d7-25ab9348b448"/>
+			<reference value="urn:uuid:223f5c66-66bf-4cea-a5d7-25ab9348b448"/>
 		</assigner>
 	</accessionIdentifier>
 	<receivedTime value="2016-04-04T09:20:00+01:00"/>
 	<collection>
 		<!-- This is reference to the practitioner profile elsewhere in the message -->
 		<collector>
-			<reference value="Practitioner/4bfca0ef-85d0-4c5e-b662-d4910bb83d82"/>
+			<reference value="urn:uuid:4bfca0ef-85d0-4c5e-b662-d4910bb83d82"/>
 			<display value="Dr. Jones"/>
 		</collector>
 		<!-- Quantity collected. Need to understand if this applies to this type of specimen-->
@@ -95,7 +95,7 @@
 			<value value="678e680b-2d32-4a7a-85a1-cc79d57d4142"/>
 			<assigner>
 				<!-- This can be a reference to the profile elsewhere in the message or just text -->
-				<reference value="Organisation/78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
+				<reference value="urn:uuid:78d64bb3-b5b2-450b-aeb7-d9035ebc711d"/>
 				<display value="MGP Medical Centre"/>
 			</assigner>
 		</identifier>

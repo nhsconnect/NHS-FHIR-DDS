@@ -3,7 +3,7 @@
 <!--This is an example for a Cytology cervical screening (PAP) test.-->
 <Observation xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir  ../../Schemas/observation.xsd">
 	<!--The id for this entity-->
-	<id value="4862C5DD-8D02-475E-A0EC-66BA47BFD282"/>
+	<id value="4862c5dd-8d02-475e-a0ec-66ba47bfd282"/>
 	<!--Identifies the profile being used-->
 	<meta>
 		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-report-observation-1-0"/>
@@ -14,7 +14,7 @@
 		<value value="CP8667800015"/>
 		<assigner>
 			<!-- This can be a reference to the profile elsewhere in the message or just text -->
-			<reference value="Organization/223F5C66-66BF-4CEA-A5D7-25AB9348B448"/>
+			<reference value="urn:uuid:223f5c66-66bf-4cea-a5d7-25ab9348b448"/>
 		</assigner>
 	</identifier>
 	<status value="final"/>
@@ -35,7 +35,7 @@
 		</coding>
 	</code>
 	<subject>
-		<reference value="Patient/9A66024B-0546-4088-B20E-DFF3C2C00FCE"/>
+		<reference value="urn:uuid:9a66024b-0546-4088-b20e-dff3c2c00fce"/>
 		<display value="Chrystal Jones"/>
 	</subject>
 	<effectiveDateTime value="2016-02-11T11:06:25+01:00"/>
@@ -61,7 +61,7 @@
 	</method>
 	<specimen>
 		<!--Reference to specimen elsewhere in the message-->
-		<reference value="Specimen/DE756619-4DB4-4C51-9FFB-9DDC8682C96"/>
+		<reference value="urn:uuid:de756619-4db4-4c51-9ffb-9ddc8682c96"/>
 	</specimen>
 	<!--Need to clarify if reference ranges apply to this test; probably unlikely.-->
 	<referenceRange>
