@@ -1,0 +1,1 @@
+The Specimen resource represents the specimen that requires a Diagnostic Data Service to be performed.

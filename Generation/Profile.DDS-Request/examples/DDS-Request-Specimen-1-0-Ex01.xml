@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This example message is provided for illustrative purposes only. It has had no clinical validation. Whilst every effort has been taken to ensure that the examples are consistent, where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence-->
+<Specimen xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/specimen.xsd">
+	<meta>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dds-specimen-1-0"/>
+	</meta>
+	<identifier>
+		<use value="official"/>
+		<value value="83bf8c17-9b27-465a-84b2-cec6e4977a1e"/>
+		<period>
+			<start value="2016-01-01"/>
+		</period>
+		<assigner>
+			<reference value="urn:uuid:M85008"/>
+			<display value="Assigning Organisation"/>
+		</assigner>
+	</identifier>
+	<status value="available"/>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value=" 20150731"/>
+			<code value="119297000"/>
+			<display value="blood specimen"/>
+			<userSelected value="true"/>
+		</coding>
+	</type>
+	<subject>
+		<reference value="urn:uuid:b2d4b85d-ac24-4e9c-a368-588c3f34f570"/>
+		<display value="William Arthur Smith"/>
+	</subject>
+	<accessionIdentifier>
+		<value value="ECC4D353"/>
+		<period>
+			<start value="2016-01-03"/>
+		</period>
+	</accessionIdentifier>
+	<receivedTime value="0900"/>
+	<collection>
+		<collector>
+			<reference value="urn:uuid:856F14A7-5323-4998-930A-A63E29B79F2F"/>
+			<display value="Nurse. Brown"/>
+		</collector>
+		<quantity>
+			<value value="6"/>
+			<unit value="mL"/>
+		</quantity>
+		<method>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<version value=" 20150731"/>
+				<code value=" 2661284019"/>
+				<display value="Diagnostic blood test (procedure)"/>
+				<userSelected value="true"/>
+			</coding>
+		</method>
+		<bodySite>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<version value=" 20150731"/>
+				<code value="53120007"/>
+				<display value="Arm"/>
+				<userSelected value="true"/>
+			</coding>
+		</bodySite>
+	</collection>
+	<treatment>
+		<description value="Haemoglobin A1c level DCCT aligned, blood">
+		</description>
+		<procedure>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<version value=" 20150731"/>
+				<code value="313835008"/>
+				<display value="Hemoglobin A1c measurement aligned to the Diabetes Control and Complications Trial (procedure)"/>
+				<userSelected value="true"/>
+			</coding>
+		</procedure>
+	</treatment>
+	<container>
+		<identifier>
+			<value value="08fc96c4-eb3a-46d3-93c5-4b23792dcc1c"/>
+		</identifier>
+		<type>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<version value=" 20150731"/>
+				<code value="434746001"/>
+				<display value="Specimen vial"/>
+			</coding>
+		</type>
+		<capacity>
+			<value value="10"/>
+			<unit value="mL"/>
+		</capacity>
+	</container>
+</Specimen>
