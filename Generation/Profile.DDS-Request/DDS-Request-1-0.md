@@ -1,1 +1,0 @@
-The Diagnostic Request resource describes the request for diagnostic tests performed on patients, groups of patients, devices, and locations, and/or specimens derived from these. 

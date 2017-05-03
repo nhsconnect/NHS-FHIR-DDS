@@ -1,1 +1,0 @@
-An extension to detail the organization active period.
