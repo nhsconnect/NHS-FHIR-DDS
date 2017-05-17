@@ -151,7 +151,7 @@
 <p><strong>Diagnostic Data Services</strong></p>
 <p>This section provides Diagnostic Data Services implementers with the information required to utilise the Diagnostic Data Services Domain Message Specification.</p>
 <p><strong>Message Patterns and Message Structure</strong></p>
-<p>The Diagnostic Data Services FHIR interface is based on the <a href="http://hl7.org/fhir/messaging.html">HL7 FHIR DSTU2 1.0.1 Messaging Implementation</a> (Sept 2015) Messaging Implementation and supports one interaction. </p>
+<p>The Diagnostic Data Services FHIR interface is based on the [HL7 FHIR DSTU2 1.0.1 Messaging Implementation] (Sept 2015) Messaging Implementation and supports one interaction. </p>
 <p><strong>Message acknowledgements and responses:</strong></p>
 <p>Information to follow at a later date</p>
 <p><strong>RPT-DiagnosticDataServicesReport-1-0 Interaction</strong> </p>
@@ -161,23 +161,9 @@
 <li><strong>Receiver:</strong> (Request Placer):*Diagnostic Data Services Request Message Originating System</li>
 <li><strong>Message:</strong> <strong>Wire Format</strong>: DiagnosticDataServicesReport-1-0</li>
 </ul>
-<p><strong>Message acknowledgements and responses:</strong></p>
-<p>Information to follow at a later date</p>
-<p><strong>Diagnostic Data Services Interaction Diagram</strong>
-</br></p>
+<p><strong>Diagnostic Data Services Interaction Diagram</strong></p>
 <p>The diagram shows the Diagnostic Data Services Interactions:</p>
-<p></br></p>
 <div style="display: block;"><img  src="DiagnosticDataServicesInteractions.png" alt="DDAInteractions"></div>  
-<p><br></p>
-<p><strong>FHIR Messaging</strong></p>
-<p>The FHIR message made up of the resources is bundled within an FHIR Bundle wrapper to create the FHIR structure.</p>
-<p>For the purpose of this implementation guide, the FHIR resources are bundled together to construct a FHIR Message payload.</p>
-<p>In FHIR messaging, a &quot;message&quot; is sent from a source application to a destination application when an event happens. Events mostly correspond to things that happen in the real world. The message consists of a bundle identified by the tag &quot;http://hl7.org/fhir/tag/message&quot;, with the first resource in the bundle being a MessageHeader resource.</p>
-<p><strong>XML Example of the wrapped FHIR message</strong></p>
-<p>TBA</p>
-<p><strong>Further Information</strong></p>
-<p>For more information about FHIR messaging please visit: <a href="http://hl7.org/fhir/messaging.html">HL7 FHIR DSTU2 1.0.1 Messaging Implementation</a></p>
-
 									</div>
 							
 						
