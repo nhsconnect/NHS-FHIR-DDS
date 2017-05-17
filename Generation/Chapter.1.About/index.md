@@ -14,12 +14,7 @@ The move to adopting the NLMC as a single set of pathology data standards for us
 
 **The FHIR resources in the Diagnostic Data Services Domain Message Specification are bundled together to construct:**
 
--	Diagnostic Data Services Report
-
-**Exclusions**
-
-None
-
+- Diagnostic Data Services Report
 
 **Further Information**
 
@@ -29,6 +24,4 @@ This FHIR Messaging specification is based on and intended to be used alongside 
 
 [FHIR DSTU2 1.0.1]: http://hl7.org/fhir/index.html
 
-
 [Work_Stream_2.1_Final.pdf]: https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/465064/Work_Stream_2.1_Final.pdf
-

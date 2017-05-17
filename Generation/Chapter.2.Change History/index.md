@@ -2,7 +2,7 @@
 
 ### Version: 1.0; Status: Draft C #
 
-The follwoing changes have been applied to the DDS DMS:
+The following changes have been applied to the DDS DMS:
 
 - DMS updated with NHS Digital branding
 
@@ -70,7 +70,7 @@ An informational page showing the proposed architecture for this DMS has been pu
 
 **Examples**
 
-The following xml examples have been created as initial drafts:-
+The following XML examples have been created as initial drafts:-
 
 - DDS-Request-1-0-Ex01: This describes a request for a Diagnostic services' test.
 - DDS-Report-1-0-Ex-01: This shows a Diagnostic report relating to the results of a Diagnostic test.
