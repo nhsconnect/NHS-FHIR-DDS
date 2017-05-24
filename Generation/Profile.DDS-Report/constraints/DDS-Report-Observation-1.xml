@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-15T16:06:46.215+01:00" />
+    <lastUpdated value="2017-05-18T13:49:32.315+01:00" />
     <tag>
       <system value="urn:hscic:examples" />
       <code value="DDS-Report-Observation-1-FBC" />
@@ -24,7 +24,7 @@
     </tag>
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="7" />
+      <code value="11" />
     </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">

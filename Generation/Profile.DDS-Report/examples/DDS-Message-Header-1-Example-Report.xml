@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageHeader xmlns="http://hl7.org/fhir">
+					<id value="63ab41c5-a6d0-4d7e-af36-fca70ea9e526"/>
+					<meta>
+						<profile value="https://fhir.nhs.uk/StructureDefinition/dds-message-header-1"/>
+					</meta>
+					<timestamp value="2017-05-04T15:02:11+00:00"/>
+					<event>
+						<system value="https://fhir.nhs.uk/dds-message-event-1"/>
+						<code value="975701000000106"/>
+					</event>
+					<source>
+						<name value="Hospital Sending System"/>
+						<endpoint value="urn:nhs-uk:addressing:ods:RFM8C2"/>
+					</source>
+					<destination>
+						<name value="Local Authority Receiving System"/>
+						<endpoint value="urn:nhs-uk:addressing:ods:V396BB"/>
+					</destination>
+					<author>
+						<reference value="urn:uuid:5b5d3bab-c1bb-434a-ab0d-82c4860bb098"/>
+					</author>
+					<receiver>
+						<reference value="urn:uuid:ac831651ed4-4b25-97d9-2f204a51c182"/>
+					</receiver>
+					<responsible>
+						<reference value="urn:uuid:88563c7f-b040-486a-9018-296bf9b94f32"/>
+					</responsible>
+					<data>
+						<reference value="urn:uuid:37c1099d-638c-4970-bcc6-539403f6ca8e"/>
+					</data>
+				</MessageHeader>
