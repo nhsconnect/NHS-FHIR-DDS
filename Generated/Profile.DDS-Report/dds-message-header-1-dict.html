@@ -361,9 +361,7 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
@@ -380,14 +378,8 @@
           </td>
         </tr>
         <tr>
-          <td>Aliases</td>
-          <td>inline resources, anonymous resources, contained resources</td>
-        </tr>
-        <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -3208,15 +3200,13 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>The actual data of the message - a reference to the root/focus class of the event.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..* ?</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
@@ -3227,16 +3217,8 @@
           </td>
         </tr>
         <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Every message event is about actual data, a single resource, that is identified in the definition of the event, and perhaps some or all linked resources.</p>
-          </td>
-        </tr>
-        <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>The data is defined where the transaction type is defined. The transaction data is always included in the bundle that is the full message.  Only the root resource is specified.  The resources it references should be contained in the bundle but are not also listed here.  Multiple repetitions are allowed to cater for merges and other situations with multiple focal targets.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
