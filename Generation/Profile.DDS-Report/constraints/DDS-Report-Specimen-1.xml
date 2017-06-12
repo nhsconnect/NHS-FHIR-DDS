@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-18T13:41:05.047+01:00" />
+    <lastUpdated value="2017-06-09T14:35:16.779+01:00" />
     <tag>
       <system value="urn:hscic:examples" />
       <code value="DDS-Report-Specimen-1-Ex01" />
@@ -21,10 +21,10 @@
     <valueInteger value="1" />
   </extension>
   <url value="https://fhir.nhs.uk/StructureDefinition/dds-report-specimen-1" />
-  <version value="1.0" />
+  <version value="1.0.0" />
   <name value="DDS-Report-Specimen-1" />
   <status value="draft" />
-  <publisher value="HSCIC" />
+  <publisher value="HL7 UK" />
   <contact>
     <name value="Interoperability team" />
     <telecom>
@@ -35,6 +35,7 @@
   </contact>
   <date value="2017-03-22" />
   <description value="This Specimen resource is constrained to represent a specimen suitable for use in Diagnostic Data Services." />
+  <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.1" />
   <kind value="resource" />
   <constrainedType value="Specimen" />
@@ -8845,6 +8846,12 @@
       <path value="Specimen" />
       <type>
         <code value="Specimen" />
+      </type>
+    </element>
+    <element>
+      <path value="Specimen.contained" />
+      <type>
+        <code value="Resource" />
       </type>
     </element>
     <element>

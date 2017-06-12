@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-18T13:48:29.552+01:00" />
+    <lastUpdated value="2017-06-09T14:35:24.114+01:00" />
     <tag>
       <system value="urn:hscic:examples" />
       <code value="DDS-Report-Family-Member-History-1" />
@@ -16,10 +16,10 @@
     <valueInteger value="0" />
   </extension>
   <url value="https://fhir.nhs.uk/StructureDefinition/dds-report-family-member-history-1" />
-  <version value="1.0" />
+  <version value="1.0.0" />
   <name value="DDS-Report-Family-Member-History-1" />
   <status value="draft" />
-  <publisher value="HSCIC" />
+  <publisher value="HL7 UK" />
   <contact>
     <name value="Interoperability team" />
     <telecom>
@@ -30,6 +30,7 @@
   </contact>
   <date value="2017-03-22" />
   <description value="This resource records significant health events and conditions for a particular individual related to the subject. &#xD;&#xA;This resource represents a simple structure used to capture a family history for a particular family member." />
+  <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.1" />
   <kind value="resource" />
   <constrainedType value="FamilyMemberHistory" />
@@ -4332,6 +4333,12 @@
         <human value="Can have age[x] or birth[x], but not both" />
         <xpath value="not (*[starts-with(local-name(.), 'age')] and *[starts-with(local-name(.), 'birth')])" />
       </constraint>
+    </element>
+    <element>
+      <path value="FamilyMemberHistory.contained" />
+      <type>
+        <code value="Resource" />
+      </type>
     </element>
     <element>
       <path value="FamilyMemberHistory.identifier" />
